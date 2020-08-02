@@ -1,0 +1,21 @@
+.wrapper {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  overflow: hidden;
+  position: relative;
+  max-width: 1500px;
+}
+
+@media (min-width: @mid-size) {
+  .wrapper {
+    width: calc(100% - 60px);
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @max-size) {
+  .wrapper {
+    width: 1220px;
+    padding: 0 calc(40px + (100% - 1300px) / 2);
+  }
+}
