@@ -8,17 +8,31 @@
   padding: 20px;
   padding-bottom: 25px;
   border-bottom: 1px solid #000;
+
+  &--closed {
+    background: linear-gradient(90deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.3) 50%), 
+    url('../img/back-mobile-1-x-jpg.png') top left/100% no-repeat;
+    border-bottom: none;
+  }
 }
 
 .page-header__button {
   border: none;
   padding: 0;
   background-color: inherit;
+  cursor: pointer;
+  background: transparent url('../img/menu-cross-svg.png');
+  width: 24px;
+  height: 24px;
 
-  &--open {
-    background-image: url('../img/menu-cross-svg.svg');
-    width: 24px;
+  &--closed {
+    background: transparent url('../img/menu-burger-svg.png');
+    width: 50px;
     height: 24px;
+  }
+
+  &--nojs {
+    display: none;
   }
 }
 
@@ -46,6 +60,4 @@
     font-weight: bold;
     text-decoration: none;
   }
-
-  
 }

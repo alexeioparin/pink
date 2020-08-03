@@ -17,7 +17,7 @@
             <img src="img/logotype-white-mobile-svg.svg" alt="" width="75" height="22" class="page-header__img">
           </picture>
         </a>
-        <button type="button" name="header-button" class="page-header__button page-header__button--open "aria-label="Кнопка открытия меню"></button>
+        <button type="button" name="header-button" class="page-header__button page-header__button--closed page-header__button--nojs"aria-label="Кнопка открытия меню"></button>
       </div>
       <div class="page-header__menu">
         <ul class="page-header__list">
@@ -57,45 +57,49 @@
         <p class="main-intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 10</p>
       </section>
       <section class="advantages">
-        <h2 class="advantages__title">Устали от серости мегаполиса?</h2>
-        <h2 class="advantages__title">Нам есть, что вам предложить!</h2>
-        <div class="advantages__description">
-          <h3 class="advantages__description-title">Поднимает настроение</h3>
-          <p class="advantages__description-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </div>
-        <div class="advantages__description">
-          <h3 class="advantages__description-title">Меняет мир вокруг</h3>
-          <p class="advantages__description-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="advantages__description">
-          <h3 class="advantages__description-title">Заводит новых друзей</h3>
-          <p class="advantages__description-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="wrapper">
+          <h2 class="advantages__title">Устали от серости мегаполиса?</h2>
+          <h2 class="advantages__title">Нам есть, что вам предложить!</h2>
+          <div class="advantages__description">
+            <h3 class="advantages__description-title">Поднимает настроение</h3>
+            <p class="advantages__description-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="advantages__description">
+            <h3 class="advantages__description-title">Меняет мир вокруг</h3>
+            <p class="advantages__description-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="advantages__description">
+            <h3 class="advantages__description-title">Заводит новых друзей</h3>
+            <p class="advantages__description-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
         </div>
       </section>
       <section class="user-reviews-slider">
-        <div class="user-reviews-slider__message">
-          <h3>Николай Петров</h3>
-          <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <div class="wrapper">
+          <div class="user-reviews-slider__message">
+            <h3>Николай Петров</h3>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="user-reviews-slider__message visually-hidden">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="user-reviews-slider__message visually-hidden">
+            <h3></h3>
+            <p></p>
+          </div>
+          <ul class="user-reviews-slider__label-list">
+            <li>
+              <button type="button" class="user-reviews-slider__active-label"></button>
+            </li>
+            <li>
+              <button type="button"></button>
+            </li>
+            <li>
+              <button type="button"></button>
+            </li>
+          </ul>
         </div>
-        <div class="user-reviews-slider__message visually-hidden">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div class="user-reviews-slider__message visually-hidden">
-          <h3></h3>
-          <p></p>
-        </div>
-        <ul class="user-reviews-slider__label-list">
-          <li>
-            <button type="button" class="user-reviews-slider__active-label"></button>
-          </li>
-          <li>
-            <button type="button"></button>
-          </li>
-          <li>
-            <button type="button"></button>
-          </li>
-        </ul>
       </section>
       <section class="offers-list-slider">
         <div class="offers-list-slider__tariff">
@@ -131,7 +135,8 @@
         <h3 class="index-footer__info-title">Приезжайте в гости:</h3>
         <p class="index-footer__info">ул. Большая Конюшенная, 19/8</p>
       </div>
-      <iframe class="index-footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6134485018097!2d30.322577448479958!3d59.938702258935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1596320865607!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe class="index-footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6134485018097!2d30.322577448479958!3d59.938702258935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1596320865607!5m2!1sru!2sru" width="320" height="200" frameborder="0" allowfullscreen="" tabindex="0"></iframe>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
