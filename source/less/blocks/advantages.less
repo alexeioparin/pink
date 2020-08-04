@@ -8,8 +8,7 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 20px 30px;
 }
 
 .advantages__description {
@@ -34,4 +33,26 @@
 
 .advantages__description-text {
   font-size: 14px;
+}
+
+@media (min-width: @mid-size) {
+  .advantages {
+    background: url('../img/iphone-screen-3.png') bottom -40px center no-repeat,
+    linear-gradient(-185deg, #fff 50%, #f2f2f2 50%) top -700px center/ 200% 200% #fff;
+  }
+
+  .advantages__wrapper {
+    width: 310px;
+  }
+
+  .advantages__title {
+    font-size: 40px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    width: 600px;
+
+    &:last-of-type {
+      width: 400px;
+    }
+  }
 }

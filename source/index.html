@@ -6,6 +6,7 @@
     <title>Pink - сайт для обмена фото</title>
     <link rel="preload" href="fonts/open-sans-v17-latin_cyrillic-300.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.js"></script>
   </head>
   <body class="index-body">
     <header class="page-header">
@@ -13,7 +14,7 @@
         <a href="#" class="page-header__logo" aria-label="Пинк. Приложение для обмена фото.">
           <picture>
             <source media="(min-width:1200px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width:600px)" srcset="img/logo-tablet.svg">
+            <source media="(min-width:600px)" srcset="img/logotype-white-tablet-svg.svg">
             <img src="img/logotype-white-mobile-svg.svg" alt="" width="75" height="22" class="page-header__img">
           </picture>
         </a>
@@ -39,27 +40,30 @@
     <main class="main-index">
       <h1 class="visually-hidden">Приложения для обмена фото</h1>
       <section class="main-intro">
-        <h2 class="main-intro__title">Взгляните на жизнь иначе!</h2>
-        <a href="#" class="main-intro__download">Скачать приложение</a>
-        <div class="main-intro__os-block">
-          <ul class="main-intro__os-block-list">
-            <li class="main-intro__os-block-list-item">
-              <a href="#"></a>
-            </li>
-            <li class="main-intro__os-block-list-item">
-              <a href="#"></a>
-            </li>
-            <li class="main-intro__os-block-list-item">
-              <a href="#"></a>
-            </li>
-          </ul>
+        <div class="wrapper main-intro__wrapper">
+          <h2 class="main-intro__title">Взгляните на жизнь иначе!</h2>
+          <a href="#" class="main-intro__download">Скачать приложение</a>
+          <div class="main-intro__os-block">
+            <ul class="main-intro__os-block-list">
+              <li class="main-intro__os-block-list-item">
+                <a href="#"></a>
+              </li>
+              <li class="main-intro__os-block-list-item">
+                <a href="#"></a>
+              </li>
+              <li class="main-intro__os-block-list-item">
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
+          <p class="main-intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 10</p>
         </div>
-        <p class="main-intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 10</p>
       </section>
       <section class="advantages">
-        <div class="wrapper">
-          <h2 class="advantages__title">Устали от серости мегаполиса?</h2>
-          <h2 class="advantages__title">Нам есть, что вам предложить!</h2>
+
+        <h2 class="advantages__title">Устали от серости мегаполиса?</h2>
+        <h2 class="advantages__title">Нам есть, что вам предложить!</h2>
+        <div class="wrapper advantages__wrapper">
           <div class="advantages__description">
             <h3 class="advantages__description-title">Поднимает настроение</h3>
             <p class="advantages__description-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
