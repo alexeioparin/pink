@@ -21,16 +21,18 @@
     margin: 0;
     padding: 0 8px;
     text-align: center;
+    min-height: 180px;
   }
 }
 
 .user-reviews-slider__label-list {
   list-style: none;
   padding: 0 110px;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 70px;
 
   li {
     display: flex;
@@ -52,4 +54,12 @@ button.user-reviews-slider__active-label {
   width: 12px;
   height: 12px;
   border: solid 3px #283645;
+}
+
+@media (min-width: @mid-size) {
+  .user-reviews-slider {
+    background: linear-gradient(-185deg, #fff 50%, #f2f2f2 50%) bottom -850px center/200% 200% #fff;
+    padding-top: 0;
+    padding-bottom: 120px;
+  }
 }

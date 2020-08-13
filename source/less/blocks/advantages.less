@@ -1,5 +1,5 @@
 .advantages {
-  background: url('../img/iphone-screen-3.png') bottom -40px center no-repeat,
+  background: url('../img/iphone-screen-3.png') bottom -40px center/157px no-repeat,
   linear-gradient(-185deg, #fff 50%, #f2f2f2 50%) top -800px center/ 200% 200% #fff;
   padding-top: 45px;
 }
@@ -37,12 +37,14 @@
 
 @media (min-width: @mid-size) {
   .advantages {
-    background: url('../img/iphone-screen-3.png') bottom -40px center no-repeat,
-    linear-gradient(-185deg, #fff 50%, #f2f2f2 50%) top -700px center/ 200% 200% #fff;
+    background: url('../img/iphone-screen-3.png') bottom -65px left 20px no-repeat,
+    linear-gradient(-185deg, #fff 50%, #f2f2f2 50%) top 130px right no-repeat #fff;
+    background-size: 43%, 1000%;
   }
 
   .advantages__wrapper {
-    width: 310px;
+    width: 315px;
+    margin-left: auto;
   }
 
   .advantages__title {
@@ -54,5 +56,26 @@
     &:last-of-type {
       width: 400px;
     }
+  }
+
+  .advantages__description {
+    margin-bottom: 40px;
+
+    &:first-of-type {
+      margin-top: 115px;
+    }
+
+    &:last-of-type {
+      padding-bottom: 30px;
+    }
+  }
+
+  .advantages__description-title {
+    margin: 0;
+    text-align: left;
+  }
+
+  .advantages__description-text {
+    text-align: left;
   }
 }

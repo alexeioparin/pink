@@ -1,0 +1,50 @@
+.promo {
+  display: none;
+}
+
+@media (min-width: @mid-size) {
+  .promo {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px;
+  }
+
+  .promo__img {
+    background-image: url('../img/timer-svg.svg');
+    width: 238px;
+    height: 276px;
+    position: relative;
+
+    &::after {
+      content: "24";
+      position: absolute;
+      font-size: 96px;
+      color: #d22856;
+      font-weight: bold;
+      border: 15px solid  #d22856;
+      border-radius: 50%;
+      padding: 30px;
+      margin: 56px 19px;
+    }
+  }
+
+  .promo__description {
+    width: 290px;
+
+    h2 {
+      font-size: 30px;
+      line-height: 36px;
+      width: 170px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #283645;
+    }
+
+    a {
+      color: #d22856;
+    }
+  }
+}
